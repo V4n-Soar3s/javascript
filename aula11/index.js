@@ -7,6 +7,7 @@
  * Multiplicação (*)
  * Potenciação (**) -> sempre que quisermos elevar um número a outro número usamos **
  * Resto da divisão (%) -> 
+ * 
  * ** Precedência dos operadores aritméticos ***
  * 1º () - tudo o que tiver dentro do parenteses vai ser executado primeiro 
  * 2º ** - depois fazemos a potenciação 
