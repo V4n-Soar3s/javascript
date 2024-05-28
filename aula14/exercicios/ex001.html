@@ -12,16 +12,15 @@
 
     <script>
         const nome = prompt('Digite seu nome completo: ');
-        console.log(nome.length( ));
 
         document.body.innerHTML = `O seu nome é: ${nome} <br/>`;
-        document.body.innerHTML += `Seu nome tem _____ letras <br/>`;//concantenando a primeira frase com a final
-        document.body.innerHTML += `A segunda letra do seu nome é:______ <br/>`;
-        document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome? <br/>`;
-        document.body.innerHTML += `Qual o último índice da letra A no seu nome? <br/>`;
-        document.body.innerHTML += `As últimas 3 letras do seu nome são: <br/>`;
-        document.body.innerHTML += `Seu nome com letras maiúsculas: <br/>`;
-        document.body.innerHTML += `Seu nome com letras minúsculas: <br/>`;
+        document.body.innerHTML += `Seu nome tem ${nome.length} letras <br/>`;//concantenando a primeira frase com a final
+        document.body.innerHTML += `A segunda letra do seu nome é: ${nome.charAt(1)} <br/>`;// apresentar a segunda letra 
+        document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome? ${nome.search(/a/)}<br/>`;// a primeira letra A 
+        document.body.innerHTML += `Qual o último índice da letra "A" no seu nome? ${nome.lastIndexOf(/a/-1)}<br/>`;// a ultima letra a 
+        document.body.innerHTML += `As últimas 3 letras do seu nome são: ${nome.slice(17,21)}<br/>`;// lva
+        document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome.toUpperCase( )}<br/>` ;// apresentar em letras maiusculas
+        document.body.innerHTML += `Seu nome com letras minúsculas: ${nome.toLowerCase( )}<br/>`;// apresentare em minusculas 
     </script>
 </body>
 </html>
