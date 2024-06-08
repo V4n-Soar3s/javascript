@@ -3,7 +3,7 @@
 
 //Essa função é chamada de factory pq ela retorna//cria objetos, ela é uma fábrica de objetos
 function criaPessoa (nome, sobrenome, idade) {
-    return {nome, sobrenome, idade};// quando o nome dos valores dentro do return forem os mesmos podemos deixar tudo numa linha só que a função já entende que o valor esta atrelado a aquele parametro 
+    return {nome, sobrenome, idade};// quando o nome dos valores dentro do return forem os mesmos podemos deixar tudo numa linha só que a função já entende que o valor esta atrelado a aquele parametro
 }
 
 const pessoa1 = criaPessoa('Vanessa', 'Soares', 28);// criei uma variavel para enviar argumentos para os parametros da função 
