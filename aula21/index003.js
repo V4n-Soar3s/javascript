@@ -7,7 +7,7 @@
  */
 
 let a = [1, 2, 3]; //criei um array
-let b = a; // linkei o valor de a ou valor de b e tanto a quanto b estao apontados para o mesmo valor na memória - dado passado por referência
+let b = [...a];//quando colocamos o [...a] tornamos b uma variavel independente de a, caso a seja alterado b nao sofre alterações e caso b seja modificado a também nao sofre nenhuma alteracao // linkei o valor de a ou valor de b e tanto a quanto b estao apontados para o mesmo valor na memória - dado passado por referência
 let c = b;//crio mais uma variavel que aponta para o mesmo lugar na memória 
 
 console.log(a, b, c);
