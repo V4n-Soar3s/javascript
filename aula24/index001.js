@@ -18,5 +18,9 @@ console.log(expressaoAnd);
 const expressaoOr = false || false || true || false || false; // se uma das condições for verdadeira ela retorna como true
 console.log(expressaoOr);
 
+// ! - NOT - NÃO = inverte uma expressão 
+
+console.log(!true);//inverti o valor do true
+
 
 
