@@ -2,7 +2,7 @@
 
 Operadores de comparação = comparar dois valores
 
-> maior que
+> maior que (esse so chega se o da esquerda é maior do que o da direita)
 >= maior que ou igual a
 < menor que 
 <=  menor que ou igual a
