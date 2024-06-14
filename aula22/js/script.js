@@ -3,7 +3,7 @@
 
 function meuEscopo (){// criei uma função
     const form = document.querySelector('.form');//criei uma variavel que chama o formulario dentro dela com a class que definimos
-    const resultado = document.querySelector('.resultado');//selecionamos a div 
+    const resultado = document.querySelector('.resultado');//selecionamos a div resultado
 
     const pessoas = [];//criei um array vazio porque quem vai preencher é o envio dos dados da pagina 
 
