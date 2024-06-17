@@ -1,7 +1,11 @@
-const numero = 10;
+//se eu preciso checar uma coisa independente eu crio um novo if para aquela coisa
+// se eu preciso de mais condições else if 
+// se nao eu crio else 
 
-if(1===1){//podemos criar mais de uma condição sem estar ligada ou presa a outra
-    console.log('Literal');
+const numero = 5;
+
+if(numero < 10){//podemos criar mais de uma condição sem estar ligada ou presa a outra
+    console.log('O número é menor que 10.');
 }
 
 if (numero >= 0 && numero <=5) {//se isso ocorrer faça isso
