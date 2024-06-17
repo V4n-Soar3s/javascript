@@ -11,7 +11,7 @@
 //podemos usar condições sem else if, utilizando apenas if e else
 
 
-const hora = 25;
+const hora = 23;
 
 if (hora >=0 && hora <=11  ){//se a hora for menor do que 11 será apresentada a mensagem bom dia 
     console.log('Bom dia');

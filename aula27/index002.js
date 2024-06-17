@@ -18,4 +18,3 @@ if (numero >= 0 && numero <=5) {//se isso ocorrer faça isso
     console.log('O número não está entre 0 e 11.');
 }
 
-console.log('...Aqui vai o resto do código')
