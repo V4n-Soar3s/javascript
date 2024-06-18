@@ -47,7 +47,7 @@ ul{
     padding: 0px;
 }
 
-form input, form label, form button {
+form input, form label, form submit {
     display: block;
     width: 100%;
     margin-bottom:10px;
@@ -59,7 +59,11 @@ form > input{
     height: 30px;
 }
 
-button{
+form > input:hover{
+    background: white;
+}
+
+.btn{
     font-weight: 700;
     font-size: 1em;
     width: 100%;
@@ -68,15 +72,15 @@ button{
     cursor: pointer;
 }
 
-form > input:hover{
-    background: white;
-}
-
-button:hover{
+.btn:hover{
     background: var(--cor002);
     text-decoration: underline;
     font-weight: bolder;
     color: white;
+}
+
+.btn:active{
+    background: var(--cor001);
 }
 
 
