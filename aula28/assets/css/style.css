@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor001: #242038;
+    --cor002: #725AC1;
+    --cor003: #8D86C9;
+    --cor004: #CAC4CE;
+    --cor005: #F7ECE1;
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+h1{
+    font-size: 1.6em;
+}
+
+body{
+    padding: 30px;/*distancia entre o conteudo e a borda*/
+    margin: 0px;/*0 de margem*/
+    background: var(--cor002);
+    font-family: 'Open Sans', sans-serif;/*tipo da letra*/
+    font-size: 1em;/*tamanho da letra*/
+    text-align: justify;/*texto justificado*/
+    line-height: 1.5em;
+}
+
+.principal{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.indice{
+    display: flex;
+}
+
+
