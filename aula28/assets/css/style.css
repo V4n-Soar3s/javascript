@@ -23,14 +23,14 @@ body{
     padding: 30px;/*distancia entre o conteudo e a borda*/
     margin: 0px;/*0 de margem*/
     background: var(--cor002);
-    font-family: 'Open Sans', sans-serif;/*tipo da letra*/
+    font-family: 'Inter', sans-serif;/*tipo da letra*/
     font-size: 1em;/*tamanho da letra*/
     text-align: justify;/*texto justificado*/
     line-height: 1.5em;
 }
 
 .principal{
-    max-width: 640px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background-color: white;
@@ -39,6 +39,44 @@ body{
 
 .indice{
     display: flex;
+    gap: 150px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+form > input{
+    background: var(--cor004);
+    border-radius: 10px;
+    height: 30px;
+}
+
+button{
+    font-weight: 700;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form > input:hover{
+    background: white;
+}
+
+button:hover{
+    background: var(--cor002);
+    text-decoration: underline;
+    font-weight: bolder;
+    color: white;
 }
 
 

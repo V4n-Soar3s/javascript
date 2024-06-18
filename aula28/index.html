@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC: Cáculo de Indice de Massa Corporal</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <section class="principal">
         <h1>
@@ -33,15 +35,19 @@
         </div>
 
         <h1>Calcule seu IMC</h1>
-        <label for="ipeso">Peso</label>
-        <input type="text" id="ipeso">
 
-        <label for="ialtura">Altura</label>
-        <input type="text" id="ialtura">
+        <form action="">
+            <label for="ipeso">Peso:</label>
+            <input type="text" id="ipeso">
 
-        <button>CALCULAR</button>
+            <label for="ialtura">Altura:</label>
+            <input type="text" id="ialtura">
+        </form>
+
+        <button>Calcular</button>
     </section>
 
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>
