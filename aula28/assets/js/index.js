@@ -11,13 +11,28 @@ form.addEventListener('submit', function(evento){//posso chamar de event ou e
     const altura = Number(inputAltura.value);
 
     if (!peso){
-        setResultado('Peso inválido');
+        setResultado('Peso inválido', false);
         return;
     }
 
-    const a;
+    if(!altura){
+        setResultado('Altura inválida', false);
+        return;
+    }
+
+    const imc = getImc(peso, altura);
+
+    console.log(imc);
 });//criamos uma função para parar o evento no caso vamos escutar o submit, deve ser criada uma função, seja criando ou adicionando ela. 
 
+function getNivelImc(imc){
+    const nivel = [`Abaixo do peso`, `Peso normal`, `Sobrepeso`, `Obesidade grau 1`, `Obesidade grau 2`, `Obesidade grau 3`]
+}
+
+function getImc(peso, altura){
+    const imc = peso / altura ** 2;
+    return imc.toFixed(2);
+}
 
 function criaP(){//funcao que cria parágrafos
     const p = document.createElement('p'); //estou criando um paragrafo
@@ -33,6 +48,8 @@ function setResultado(msg, isValid){
     resultado.innerHTML = '';
 
     const p = criaP();
+    p.innerHTML = msg;
+    resultado.appendChild(p);
 }// toda vez que for enviado será criado um paragrafo 
 
 
