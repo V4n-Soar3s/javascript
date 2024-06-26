@@ -4,13 +4,18 @@ const form = document.querySelector('#formulario');//criei a variavel para chama
 
 form.addEventListener('submit', function(evento){//posso chamar de event ou e 
     evento.preventDefault();
-    const inputPeso = e.target.querySelector('#ipeso');
-    const inputAltura = e.target.querySelector('#ialtura');
+    const inputPeso = evento.target.querySelector('#ipeso');
+    const inputAltura = evento.target.querySelector('#ialtura');
 
     const peso = Number(inputPeso.value);
     const altura = Number(inputAltura.value);
 
-    console.log(peso, altura)
+    if (!peso){
+        setResultado('Peso inválido');
+        return;
+    }
+
+    const a;
 });//criamos uma função para parar o evento no caso vamos escutar o submit, deve ser criada uma função, seja criando ou adicionando ela. 
 
 
@@ -23,7 +28,7 @@ function criaP(){//funcao que cria parágrafos
 
 
 
-function setResultado(msg){
+function setResultado(msg, isValid){
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
 
